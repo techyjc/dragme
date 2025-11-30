@@ -1,15 +1,22 @@
 padwrapper = document.querySelector(".pad-wrapper");
 pad = document.querySelector(".pad");
 paddrag = document.querySelector(".pad-header");
+
+padform = document.querySelector(".pad-form");
+
 drag = false;
 offsetX = 0;
 offsetY = 0;
+
 wrapperheight = padwrapper.offsetHeight;
 wrapperwidth = padwrapper.offsetWidth;
 padheight = pad.offsetHeight;
 padwidth = pad.offsetWidth;
 obj = "";
 
+padform.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+})
 
 paddrag.addEventListener("mousedown", (evt) => {
     drag = true;
