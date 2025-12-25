@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,43 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
+
 <body>
     <nav class="pad-nav">
-        <form class="pad-form" action="">
-            <button class="new-pad">Pad +</button>
-            <span>Colour</span>
-            <button type="button" class="pad-color color1"></button>
-            <button type="button" class="pad-color color2"></button>
-            <button type="button" class="pad-color color3"></button>
-            <button type="button" class="pad-color color4"></button>
-            <button type="button" class="pad-color color5"></button>
+        <div class="pad-form">
+            <span>Add Note</span>
+            <img src="./images/sticky_note.svg" class="pad-color color1" alt="New Note">
+            <img src="./images/sticky_note.svg" class="pad-color color2" alt="New Note">
+            <img src="./images/sticky_note.svg" class="pad-color color3" alt="New Note">
+            <img src="./images/sticky_note.svg" class="pad-color color4" alt="New Note">
+            <img src="./images/sticky_note.svg" class="pad-color color5" alt="New Note">
             <span>Work in progress.</span>
-        </form>
+        </div>
     </nav>
     <main class="pad-wrapper">
-    <div class="pad">
-        <div class="pad-header">
-           <span>Drag Me</span>
+        <div class="pad color4">
+            <div class="pad-header">
+                Drag Me
+            </div>
+            <div class="pad-content">
+                <p>
+                    An experimental notepad with drag drop features. This is work in progress so some features and UI
+                    are not working yet.
+                </p>
+            </div>
         </div>
-        <div class="pad-content">
-            <p>
-                An experimental notepad with drag drop features.
-            </p>
+        <div class="pad color2">
+            <div class="pad-header">
+                <span>Drag Me</span>
+            </div>
+            <div class="pad-content">
+                <p>
+                    An experimental notepad with drag drop features. This is work in progress so some features and UI
+                    are not working yet.
+                </p>
+            </div>
         </div>
-    </div>
     </main>
 </body>
+
 </html>
